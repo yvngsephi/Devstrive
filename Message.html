@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devstrive</title>
+    <link rel="stylesheet" href="style.css">
+    
+   
+    <script src="https://kit.fontawesome.com/bef4c271f8.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <style>
+
+
+    </style>
+
+</head>
+
+ <body> 
+
+    <nav class="topbar">
+
+    <ul>
+        <a href="index.html" class="logo">Egg<br>Studios
+        <img src="img/mascot.png" class="mascot">
+        </a>
+
+        <div class="button_container" >
+        <li><a href="News.html">News</a></li>
+        <li>
+            <a>Game Info<i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown">
+                <li><a href="Characters.html"><span class="menu-item"> <span>Characters</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+                <li><a href="Tutorial.html"><span class="menu-item"> <span>Tutorial</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+
+            </ul>
+        </li>
+
+        <li>
+            <a>Team<i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown1">
+                <li><a href="Members.html"><span class="menu-item"> <span>Members</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+                <li><a href="Media.html"><span class="menu-item"> <span>Media</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+            </ul>
+        
+        </li>
+
+        <li>
+            <a>Socials<i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown1">
+                <li><a href="https://www.facebook.com/profile.php?id=61554896715386" target="_blank"><span class="menu-item"> <span>Facebook</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+                <li><a href="https://www.instagram.com/dev_strive/?next=%2F&hl=en" target="_blank"><span class="menu-item"> <span>Instagram</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+                <li><a href="https://twitter.com/DevStrive" target="_blank"><span class="menu-item"> <span>Twitter</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+                <li><a href="Message.html"><span class="menu-item"> <span>Message</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+            </ul> 
+        </li>
+        
+        </div>
+    </ul>
+</nav>
+
+<div>
+
+    <h1 class="MSG">SEND US A MESSAGE!</h1>
+
+    <p class="MSG1"> We'll receive your message through our emails. You can send us a feedback <br> about our game or a quick message about the team we'll gladly appreciate it!!!</p>
+
+    <!-- <textarea class="txtM" placeholder="Type Your Message Here"></textarea>
+
+    <button type="submit" class="SUBMIT"> SUBMIT</button> -->
+
+</div>
+
+<!-- <div class="submitTXT">
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="7b0a1ec3-4333-4202-a9d2-43dabe5591f8">
+    <textarea name="email" input type="email" placeholder="Email Here..." class="txtE" required></textarea>
+    <textarea name="message" placeholder="Type Your Message Here..." class="txtM" required></textarea>
+    <button type="submit" class="SUBMIT"> SUBMIT</button>
+
+</div> -->
+
+<div class="submitTXT">
+
+    <form method="POST">
+    <textarea name="email" id="email" placeholder="Email Here..." class="txtE" required></textarea>
+    <textarea name="message" placeholder="Type Your Message Here..." id="message" class="txtM" required></textarea>
+    <button type="submit" class="SUBMIT" id="submit"> SUBMIT</button>
+
+</div>
+
+</body>
+<script type="module">
+    import{initializeApp as e}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import{getDatabase as a,ref as s,set as t,get as i,child as l}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+    let QlVcSzXj={apiKey:"AIzaSyCVa2lSgfGZit5cfWBIfAxLJc0tqhbx8UQ",authDomain:"devstrive-6b031.firebaseapp.com",projectId:"devstrive-6b031",storageBucket:"devstrive-6b031.appspot.com",messagingSenderId:"542566127377",appId:"1:542566127377:web:1f3978921b5c715c3fdeb0"},XjNzTzWl=e(QlVcSzXj),VlKxMzVl=a(XjNzTzWl);
+    document.getElementById("submit").addEventListener("click",function(e){e.preventDefault(),t(s(VlKxMzVl,"message/"+document.getElementById("message").value),{email:document.getElementById("email").value,message:document.getElementById("message").value}),
+    alert("Thank you for sending a message")});
+  </script>
+
+</body>
+</html>

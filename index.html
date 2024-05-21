@@ -1,0 +1,131 @@
+<!--
+    Class names meaning para di kayo malito
+    q1/q2 - question yan or parang main header sa specific topic kunware the friends we made along the way ganon
+    d1/d2 - mga definition kasama dyan
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devstrive</title>
+    <link rel="stylesheet" href="style.css">
+    
+   
+    <script src="https://kit.fontawesome.com/bef4c271f8.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <style>
+
+
+    </style>
+
+</head>
+
+ <body> 
+
+    <nav class="topbar">
+
+    <ul>
+        <a href="index.html" class="logo">Egg<br>Studios
+        <img src="img/mascot.png" class="mascot">
+        </a>
+
+        <div class="button_container" >
+        <li><a href="News.html">News</a></li>
+        <li>
+            <!-- <a href="GameInfo">Game Info<i class="fa-solid fa-chevron-down"></i></a> -->
+            <a>Game Info<i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown">
+                <!-- <li><a href="News.html"><span class="menu-item"> <span>Characters</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li> -->
+                <li><a href="Characters.html"><span class="menu-item"> <span>Characters</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+                <li><a href="Tutorial.html"><span class="menu-item"> <span>Tutorial</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+
+            </ul>
+        </li>
+
+        <li>
+            <!-- <a href="#Team">Team<i class="fa-solid fa-chevron-down"></i></a> -->
+            <a>Team<i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown1">
+                <li><a href="Members.html"><span class="menu-item"> <span>Members</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+                <li><a href="Media.html"><span class="menu-item"> <span>Media</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+            </ul>
+        
+            <li>
+                <a>Socials<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown1">
+                    <li><a href="https://www.facebook.com/profile.php?id=61554896715386" target="_blank"><span class="menu-item"> <span>Facebook</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+                    <li><a href="https://www.instagram.com/dev_strive/?next=%2F&hl=en" target="_blank"><span class="menu-item"> <span>Instagram</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+                    <li><a href="https://twitter.com/DevStrive" target="_blank"><span class="menu-item"> <span>Twitter</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+                    <li><a href="Message.html"><span class="menu-item"> <span>Message</span> <i class="fa-solid fa-up-right-from-square"></i></span></a></li>
+                </ul> 
+            </li>
+
+        </div>
+    </ul>
+
+    </nav> 
+ 
+<div class="Main">
+
+    <img src="img/game.png" class="game">
+    <p class="p1">A fun interactive learning game about C#</p>
+    <a href="Play.html" id="downloadButton"><button class="Play">Play Now</button></a>
+
+</div>
+
+<div class="Main2">
+
+ <p class="q1">GO ON AN ADVETURE WHILE LEARNING C#</p>
+
+ <p class="d1">The story follows a student who is lazy and
+    <br>struggling to learn a programming language, <br>which is C#.
+    As a player, you need to go on an adventure <br>while
+    learning C#. There will be some twists and <br>challenges to
+    test the user's intelligence. The player will <br>gain
+    some knowledge about the basics of C#.</p>
+
+    <img src="img/char12.jpg" class="char1">
+
+    <!-- <p class="clip">p</p> -->
+
+    <!-- <button class="Learn">Learn The Game</button> -->
+    <a href="Tutorial.html"><button class="Learn">Learn The Game</button></a>
+
+</div>
+
+<div class="Main3">
+
+    <p class="q2">FRIENDS YOU MADE <br>ALONG THE WAY</p>
+
+    <p class="d2"> While going on an adventure, you have friends to help you 
+                    <br>learn C#. Fionna and Josh will help you go on an adventure.
+                    <br>It's going to be a fun and happy adventure.</p>
+
+        <img src="img/char2.PNG" class="char2">
+        <img src="img/char3.PNG" class="char3">
+        <img src="img/char4.PNG" class="char4">
+
+        <a href="Characters.html"><button class="chars">View Characters</button></a>
+</div>
+
+<button type="submit" onclick="topFunction()" id="Up" class="Up">Go up</button>
+
+<script>
+    let mybutton = document.getElementById("Up");
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+
+</script>
+
+</body>
+</html>
